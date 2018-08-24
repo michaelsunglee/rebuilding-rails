@@ -2,14 +2,14 @@ GEM
   remote: http://rubygems.org/
   specs:
     rack (2.0.5)
-    rulers (0.0.2)
+    rulers (0.0.3)
       rack
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rulers (= 0.0.2)
+  rulers (= 0.0.3)
 
 BUNDLED WITH
    1.16.2
