@@ -10,7 +10,11 @@ module Rulers
       end
       klass, act = get_controller_and_action(env)
       controller = klass.new(env)
-      text = controller.send(act)
+      begin
+        text = controller.send(act)
+      rescue
+        puts "Some kind of exception"
+      end
       `echo debug > debug.txt`;
       [200, {'Content-Type' => 'text/html'}, [text]]
     end
